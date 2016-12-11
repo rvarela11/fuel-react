@@ -1,12 +1,13 @@
 import React from 'react';
-import Logo from './logo';
+import { Link } from 'react-router';
 
 export default () => {
   return <div>
-    <Logo />
-    <h3 className="homeMessage">3 simple steps to know if you are eating the right amount of calories</h3>
+    <h3 className="topMessage">3 simple steps to know if you are eating the right amount of calories</h3>
     <div className="buttonDivHome">
-      <button className="btn btn-primary startButton"> Start </button>
+      <Link to="/step1" className="btn btn-primary startButton">
+          Start
+      </Link>
     </div>
     <div className="row">
       <div className="col-md-4 stepsDivBox">
