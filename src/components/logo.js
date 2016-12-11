@@ -5,7 +5,9 @@ export default () => {
   return <div>
     <div className="logoDivOutside">
       <div className="logoDivInside">
-        <h1>Fuel</h1>
+        <div className="imageDivOutside">
+          <div className="image"><h1>Fuel</h1></div>
+        </div>
         <div className="outsideCaloriesDiv">
           <div className="insideCaloriesDiv">
             <h3>Goal</h3>

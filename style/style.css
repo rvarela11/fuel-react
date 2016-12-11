@@ -10,10 +10,30 @@
   width: 100%;
 }
 
+.imageDivOutside {
+  display: flex;
+  width: 100%;
+}
+.image {
+  background: url('../image/fuel-react-home.jpg');
+  width: 100%;
+  height: 100px;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
 .logoDivInside h1 {
   font-size: 5rem;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 35px;
 }
 
 .outsideCaloriesDiv {
@@ -40,11 +60,57 @@
   font-size: 2rem;
 }
 
+.homeMessage {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.stepsDivBox {
+  border: 1px solid #ccc;
+  width: 100%;
+  margin: auto;
+}
+.stepsDivBox h3 {
+  padding-top: 2%;
+}
+
+.stepsDivBox h3,h5 {
+  text-align: center;
+}
+
+.stepsDivBox i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.buttonDivHome {
+  display: flex;
+}
+
+button.btn.btn-primary.startButton {
+  margin: auto;
+  background-color: #20A4F3;
+  border-color: #20A4F3;
+  margin-bottom: 5%;
+}
+
+button.btn.btn-primary.startButton:hover{
+  background-color: #5BBA6F;
+  border-color: #5BBA6F;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)  {
   .insideCaloriesDiv {
-    height: 250px;
+    height: 125px;
   }
   .insideCaloriesDiv h3 {
-    font-size: 3.5rem;
+    font-size: 2rem;
+  }
+  .logoDivInside h1 {
+    letter-spacing: 20px;
   }
 }
