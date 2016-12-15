@@ -2,7 +2,7 @@
   "name": "fuel-react",
   "version": "1.0.0",
   "description": "Compare daily calorie intake with goal calorie intake",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "git@github.com:rvarela11/fuel-react.git",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
@@ -28,6 +28,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "babel-preset-stage-1": "^6.1.18",
+    "express": "^4.14.0",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
