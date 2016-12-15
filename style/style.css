@@ -150,6 +150,11 @@ input[type=number]:focus, input[type=text]:focus {
   margin-bottom: 2%;
 }
 
+.step1SubmitButtonDiv {
+  display: flex;
+  margin: auto;
+}
+
 /*--------------------------------------------------------------------Step2.js*/
 
 .step2DivButtonLink {

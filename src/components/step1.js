@@ -84,7 +84,9 @@ class Step1 extends Component {
             <label htmlFor="maintain" >Maintain</label><p/>
             <input id="gain" type="radio" name="goal" value="gain" {...goal} required/>
             <label htmlFor="gain">Gain</label><p/>
-            <button className="waves-effect waves-light btn" type="submit">Submit</button>
+            <div className="step1SubmitButtonDiv">
+              <button className="waves-effect waves-light btn step1SubmitButton" type="submit">Submit</button>
+            </div>  
           </form>
         </div>
       </div>
