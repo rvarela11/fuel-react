@@ -1,0 +1,234 @@
+/*--------------------------------------------------------------------Home.js*/
+
+.logoDivOutside {
+  display: flex;
+  margin-top: 1%;
+}
+
+.logoDivInside {
+  margin: auto;
+  width: 100%;
+}
+
+.imageDivOutside {
+  display: flex;
+  width: 100%;
+}
+
+.image {
+  background: url('../image/fuel-react-home.jpg');
+  width: 100%;
+  height: 90px;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.logoDivInside h1 {
+  margin-top: 15px;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  letter-spacing: 35px;
+  margin-left: 17px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.outsideCaloriesDiv {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.insideCaloriesDiv {
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 90px;
+}
+
+.insideCaloriesDiv:first-child {
+  margin-right: 1%;
+}
+
+.insideCaloriesDiv h4 {
+  text-align: center;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 1%;
+}
+
+.topMessage {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.stepsDivBox {
+  border: 1px solid #ccc;
+  width: 100%;
+  margin: auto;
+}
+.stepsDivBox h4 {
+  padding-top: 2%;
+}
+
+.stepsDivBox h4,h5 {
+  text-align: center;
+}
+
+.stepsDivBox i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.buttonDivHome {
+  display: flex;
+}
+
+.btn {
+  margin: auto;
+  background-color: #20A4F3 !important;
+  border-color: #20A4F3 !important;
+  margin-bottom: 4%;
+}
+
+.btn:hover{
+  background-color: #5BBA6F !important;
+  border-color: #5BBA6F !important;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)  {
+  .insideCaloriesDiv {
+    height: 85px;
+  }
+  .logoDivInside h1 {
+    letter-spacing: 20px;
+  }
+}
+
+/*--------------------------------------------------------------------Step1.js*/
+
+.stepDivOutside {
+  display: flex;
+  margin-top: 1%;
+}
+
+.stepDivInside {
+  margin: auto;
+  padding: 2%;
+  border: 1px solid #ccc;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+  background-color: #20A4F3 !important;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+  border-color: #20A4F3 !important;
+}
+
+input[type=number]:focus, input[type=text]:focus {
+  border-bottom: 1px solid #20A4F3 !important;
+}
+
+.stepDivInside h5 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.step1SubmitButtonDiv {
+  display: flex;
+  margin: auto;
+}
+
+/*--------------------------------------------------------------------Step2.js*/
+
+.step2DivButtonLink {
+  display: flex;
+  margin: auto;
+}
+
+.step2DivTab {
+  width: 100%;
+}
+
+.step2Form {
+  border: none;
+}
+
+.listDiv {
+  display: flex;
+  width: 100%;
+}
+
+.listDiv ul {
+  margin-left: 1%;
+  width: 100%;
+}
+
+.listDiv ul li {
+  cursor: pointer;
+  padding: 1%;
+}
+
+.listDiv ul li:hover {
+  background-color: #ccc;
+}
+
+.step2DivResultsOutside {
+  display: flex;
+  flex-direction: row;
+}
+
+.step2DivResultsOutside .step2DivResults h4 {
+  text-align: center;
+}
+
+.step2DivResults {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+a.btn.waves-effect.waves-light.finishButton {
+  background-color: #ccc !important;
+  border-color: #ccc !important;
+}
+
+@media (max-width: 992px) {
+  button.btn-flat.step2Button {
+    width: 100% !important;
+  }
+  .step2DivResultsOutside {
+    flex-direction: column;
+  }
+  .listDiv ul {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------------Step3.js*/
+
+.step3Table th, td {
+  text-align: center !important;
+  font-size: 1.5rem;
+}
+
+/*--------------------------------------------------------------------Validate Form*/
+
+.error-message {
+  color: red;
+}

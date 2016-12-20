@@ -10,6 +10,7 @@ Compare daily calorie intake with goal calorie intake
 2. Redux
 3. JavaScript
 4. nutritionix(API)
+5. Materialize
 
 ###Need####
 
