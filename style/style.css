@@ -1,3 +1,7 @@
+.container {
+  margin-bottom: 10px !important;
+}
+
 /*--------------------------------------------------------------------Home.js*/
 
 .logoDivOutside {
@@ -111,15 +115,6 @@
   border-color: #5BBA6F !important;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)  {
-  .insideCaloriesDiv {
-    height: 85px;
-  }
-  .logoDivInside h1 {
-    letter-spacing: 20px;
-  }
-}
-
 /*--------------------------------------------------------------------Step1.js*/
 
 .stepDivOutside {
@@ -148,6 +143,11 @@ input[type=number]:focus, input[type=text]:focus {
 .stepDivInside h5 {
   margin-top: 2%;
   margin-bottom: 2%;
+}
+
+.step1SubmitButtonDiv {
+  display: flex;
+  margin: auto;
 }
 
 /*--------------------------------------------------------------------Step2.js*/
@@ -226,4 +226,25 @@ a.btn.waves-effect.waves-light.finishButton {
 
 .error-message {
   color: red;
+}
+
+/*------------------------------------------------------------------Responsive*/
+
+@media screen and (max-width: 768px) {
+  .logoDivInside h1 {
+    letter-spacing: 20px;
+  }
+  .insideCaloriesDiv {
+    height: 60px;
+  }
+  .insideCaloriesDiv h4, .stepsDivBox h4 {
+    font-size: 1.50rem;
+  }
+  .stepsDivBox h5 {
+    font-size: 1.25rem;
+  }
+  .topMessage {
+    margin: 10px 0;
+    font-size: 1.50rem;
+  }
 }
