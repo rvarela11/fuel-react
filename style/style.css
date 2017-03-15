@@ -2,6 +2,9 @@ body {
   font-family: 'Droid Sans', sans-serif;
   color: #484848 ;
 }
+section {
+  margin-bottom: 2%;
+}
 
 /*--------------------------- HEADER ----------------------------*/
 
@@ -44,7 +47,7 @@ header h1 {
 
 /*--------------------------- HOME.JS ----------------------------*/
 
-.home h4 {
+section h4 {
   text-align: center;
   margin: 2% 0;
 }
@@ -131,7 +134,8 @@ header h1 {
 }
 .panel.open {
   flex: 5;
-  font-size:40px;
+  font-size: 40px;
+  padding: 3%;
 }
 .home__panels-mobile {
   display: none;
@@ -151,115 +155,107 @@ header h1 {
   margin-bottom: 2%;
 }
 
+/*--------------------------- Step1.JS ----------------------------*/
 
-/*--------------------------------------------------------------------Step1.js*/
-
-.stepDivOutside {
-  display: flex;
-  margin-top: 1%;
-}
-
-.stepDivInside {
+.step1 form {
+  border: 1px solid #ccc;
   margin: auto;
   padding: 2%;
-  border: 1px solid #ccc;
+  width: 65%;
+  margin-top: 1%;
 }
-
+.step1 form h5 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: #000;
+}
+.step1 form div button {
+  display: flex;
+  margin: auto;
+}
 [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
   background-color: #20A4F3 !important;
 }
-
 [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
   border-color: #20A4F3 !important;
 }
-
 input[type=number]:focus, input[type=text]:focus {
   border-bottom: 1px solid #20A4F3 !important;
 }
 
-.stepDivInside h5 {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
+/*--------------------------- Step2.JS ----------------------------*/
 
-.step1SubmitButtonDiv {
-  display: flex;
+.step2__form-search {
   margin: auto;
+  padding: 2%;
+  width: 50%;
+  margin-top: 1%;
 }
-
-/*--------------------------------------------------------------------Step2.js*/
-
-.step2DivButtonLink {
+.step2__form-search-buttons {
   display: flex;
-  margin: auto;
+  justify-content: center;
 }
-
-.step2DivTab {
-  width: 100%;
-}
-
-.step2Form {
-  border: none;
-}
-
-.listDiv {
-  display: flex;
-  width: 100%;
-}
-
-.listDiv ul {
-  margin-left: 1%;
-  width: 100%;
-}
-
-.listDiv ul li {
-  cursor: pointer;
-  padding: 1%;
-}
-
-.listDiv ul li:hover {
-  background-color: #ccc;
-}
-
-.step2DivResultsOutside {
-  display: flex;
-  flex-direction: row;
-}
-
-.step2DivResultsOutside .step2DivResults h4 {
-  text-align: center;
-}
-
-.step2DivResults {
-  border: 1px solid #ccc;
-  width: 100%;
-}
-
 a.btn.waves-effect.waves-light.finishButton {
   background-color: #ccc !important;
   border-color: #ccc !important;
 }
+.step2 .row {
+  width: 75%;
+}
+.row__options-buttons {
+  width: 100%;
+}
+.step2__results {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  margin: auto;
+}
+.step2__results-box {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.step2__results-box h5 {
+  text-align: center;
+}
+.list-results {
+  display: flex;
+  width: 100%;
+}
+.list-results ul {
+  margin-left: 1%;
+  width: 100%;
+}
+.list-results ul li {
+  cursor: pointer;
+  padding: 1%;
+}
+.list-results ul li:hover {
+  background-color: #ccc;
+}
 
 @media (max-width: 992px) {
-  button.btn-flat.step2Button {
+  .step2__form-search,
+  .step2__results,
+  .row__options-buttons button {
     width: 100% !important;
   }
-  .step2DivResultsOutside {
+  .step2__results {
     flex-direction: column;
   }
-  .listDiv ul {
+  .list-results ul {
     width: 100%;
   }
 }
 
-/*--------------------------------------------------------------------Step3.js*/
+/*--------------------------- Step3.JS ----------------------------*/
 
-.step3Table th, td {
+.step3__table th, td {
   text-align: center !important;
   font-size: 1.5rem;
 }
 
-/*--------------------------------------------------------------------Validate Form*/
+/*--------------------------- Validate Form ----------------------------*/
 
 .error-message {
   color: red;
@@ -302,5 +298,8 @@ a.btn.waves-effect.waves-light.finishButton {
   .home__panels,
   .home__steps {
     display: none;
+  }
+  .step1 form {
+    width: 100%;
   }
 }

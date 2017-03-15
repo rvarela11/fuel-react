@@ -24,29 +24,31 @@ class Step3 extends Component {
 
   render(){
     return <div>
-      <h4 className="topMessage">Step 3</h4>
-      <table className="step3Table">
-        <thead>
-          <tr>
-           <th>Name</th>
-           <th>Calories</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Goal</td>
-             <td>{this.props.goal}</td>
-          </tr>
-          <tr>
-            <td>Daily</td>
-            <td>{this.props.daily}</td>
-          </tr>
-          <tr>
-            <td>Net</td>
-            <td>{this.netSum()}</td>
-          </tr>
-        </tbody>
-      </table>
+      <section>
+        <h4>Step 3</h4>
+        <table className="step3__table">
+          <thead>
+            <tr>
+             <th>Name</th>
+             <th>Calories</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Goal</td>
+               <td>{this.props.goal}</td>
+            </tr>
+            <tr>
+              <td>Daily</td>
+              <td>{this.props.daily}</td>
+            </tr>
+            <tr>
+              <td>Net</td>
+              <td>{this.netSum()}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </div>
   }
 }

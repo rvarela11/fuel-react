@@ -31,19 +31,19 @@ class Step1 extends Component {
     const { fields: { gender, weight, height, age, active, goal }, handleSubmit } = this.props;
 
     return <div>
-      <h4 className="topMessage">Step 1</h4>
-      <div className="stepDivOutside">
-        <div className="stepDivInside">
+      <section className="step1">
+        <h4>Step 1</h4>
           <form onSubmit={handleSubmit (this.onSubmit.bind(this))}>
             {/* Gender * */}
-                <div>
-                  <input id="male" type="radio" name="gender" value="male" {...gender} required/>
-                  <label htmlFor="male">Male</label>
-                </div>
-                <div>
-                  <input id="female" type="radio" name="gender" value="female" {...gender} required/>
-                  <label htmlFor="female">Female</label>
-                </div>
+            <h5>Gender</h5>
+            <div>
+              <input id="male" type="radio" name="gender" value="male" {...gender} required/>
+              <label htmlFor="male">Male</label>
+            </div>
+            <div>
+              <input id="female" type="radio" name="gender" value="female" {...gender} required/>
+              <label htmlFor="female">Female</label>
+            </div>
             {/* Weight/Height/Age */}
             <h5>Info</h5>
             <div className={`${weight.touched && weight.invalid ? 'has-danger' : ''}`}>
@@ -84,12 +84,11 @@ class Step1 extends Component {
             <label htmlFor="maintain" >Maintain</label><p/>
             <input id="gain" type="radio" name="goal" value="gain" {...goal} required/>
             <label htmlFor="gain">Gain</label><p/>
-            <div className="step1SubmitButtonDiv">
-              <button className="waves-effect waves-light btn step1SubmitButton" type="submit">Submit</button>
-            </div>  
+            <div>
+              <button className="waves-effect waves-light btn" type="submit">Submit</button>
+            </div>
           </form>
-        </div>
-      </div>
+      </section>
     </div>
   }
 }

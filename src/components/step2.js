@@ -68,7 +68,7 @@ class Step2 extends React.Component {
   })
 
     return <div>
-      <div className="listDiv">
+      <div className="list-results">
         <ul>
           {foodItems.map((item) => {
             const displayInfo = `${item.name} = ${item.calories}`;
@@ -188,7 +188,7 @@ class Step2 extends React.Component {
     if ( title == "Breakfast") {
       return <div>
         <h5>{title}</h5>
-        <div className="listDiv">
+        <div className="list-results">
           <ul>
             {this.state.breakfastArray.map((item, index) => {
               return (
@@ -204,7 +204,7 @@ class Step2 extends React.Component {
     else if ( title == "Lunch") {
       return <div>
         <h5>{title}</h5>
-        <div className="listDiv">
+        <div className="list-results">
           <ul>
             {this.state.lunchArray.map((item, index) => {
               return (
@@ -220,7 +220,7 @@ class Step2 extends React.Component {
     else if ( title == "Dinner") {
       return <div>
         <h5>{title}</h5>
-        <div className="listDiv">
+        <div className="list-results">
           <ul>
             {this.state.dinnerArray.map((item, index) => {
               return (
@@ -236,7 +236,7 @@ class Step2 extends React.Component {
     else if ( title == "Snack") {
       return <div>
         <h5>{title}</h5>
-        <div className="listDiv">
+        <div className="list-results">
           <ul>
             {this.state.snackArray.map((item, index) => {
               return (
@@ -257,12 +257,11 @@ class Step2 extends React.Component {
   render() {
 
     return <div>
-      <h4 className="topMessage">Step 2</h4>
-      <div className="stepDivOutside">
-        <div className="stepDivInside step2Form">
-          <form onSubmit={this.onFormSubmit}>
+      <section className="step2">
+        <h4>Step 2</h4>
+          <form  className="step2__form-search" onSubmit={this.onFormSubmit}>
             <input onChange={this.onInputChange} type="text" name="search" placeholder="Search"/>
-            <div className="step2DivButtonLink">
+            <div className="step2__form-search-buttons">
               <button className="btn waves-effect waves-light" type="submit">Submit</button>
               <Link to="/step3" className="btn waves-effect waves-light finishButton">
                   Finish
@@ -270,30 +269,29 @@ class Step2 extends React.Component {
             </div>
           </form>
           <div className="row">
-            <div className="col l3 step2DivTab">
-              <button onClick={this.breakfastButton.bind(this)} className="btn-flat step2Button">Breakfast</button>
+            <div className="col l3 row__options-buttons">
+              <button onClick={this.breakfastButton.bind(this)} className="btn-flat">Breakfast</button>
             </div>
-            <div className="col l3 step2DivTab">
-              <button onClick={this.lunchButton.bind(this)} className="btn-flat step2Button">Lunch</button>
+            <div className="col l3 row__options-buttons">
+              <button onClick={this.lunchButton.bind(this)} className="btn-flat">Lunch</button>
             </div>
-            <div className="col l3 step2DivTab">
-              <button onClick={this.dinnerButton.bind(this)} className="btn-flat step2Button">Dinner</button>
+            <div className="col l3 row__options-buttons">
+              <button onClick={this.dinnerButton.bind(this)} className="btn-flat">Dinner</button>
             </div>
-            <div className="col l3 step2DivTab">
-              <button onClick={this.snackButton.bind(this)} className="btn-flat step2Button">Snack</button>
-            </div>
-          </div>
-        </div>
-      </div>
-          <div className="step2DivResultsOutside">
-            <div className="step2DivResults">
-              <h5>Results</h5>
-              {this.props.list.map(this.renderResultList,this)}
-            </div>
-            <div className="step2DivResults">
-              {this.renderClickedItemDiv()}
+            <div className="col l3 row__options-buttons">
+              <button onClick={this.snackButton.bind(this)} className="btn-flat">Snack</button>
             </div>
           </div>
+            <div className="step2__results">
+              <div className="step2__results-box">
+                <h5>Results</h5>
+                {this.props.list.map(this.renderResultList,this)}
+              </div>
+              <div className="step2__results-box">
+                {this.renderClickedItemDiv()}
+              </div>
+            </div>
+      </section>
   </div>
   }
 }
