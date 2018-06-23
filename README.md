@@ -1,10 +1,10 @@
 # Fuel-React
 
-###About###
+### About
 
 Compare daily calorie intake with goal calorie intake
 
-###Technologies####
+### Technologies
 
 1. React
 2. Redux
@@ -12,6 +12,7 @@ Compare daily calorie intake with goal calorie intake
 4. nutritionix(API)
 5. Materialize
 
-###Need####
+### Need
 
 1. Backend
+2. Database
